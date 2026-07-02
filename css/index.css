@@ -1,0 +1,110 @@
+/* Base settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fcfdfd;
+    color: #2f3640;
+    line-height: 1.6;
+}
+
+/* Header and navigation bar */
+.cv-global-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dcdde1;
+}
+
+.cv-brand-identity h2 {
+    color: #2f3640;
+}
+
+.cv-brand-identity h2 span {
+    color: #2ecc71; 
+}
+
+.cv-nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.cv-menu-link {
+    text-decoration: none;
+    color: #718093;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.cv-menu-link:hover, .active-page {
+    color: #2ecc71;
+}
+
+/* Hero cover */
+.cv-travel-showcase {
+    background-image: url('../images/ella.jpg');
+    background-size: cover;          
+    background-position: center;      
+    background-repeat: no-repeat;     
+    color: #ffffff;
+    text-align: center;               
+    padding: 120px 20px;              
+}
+
+.cv-travel-inside h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); 
+}
+
+.cv-travel-inside p {
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto 25px auto; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); 
+}
+
+.cv-travel-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2ecc71;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Central body content */
+.cv-homepage-main-content {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cv-intro-container h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cv-intro-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #718093;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Footer */
+.cv-main-footer {
+    background-color: #2f3640;
+    color: #dcdde1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}

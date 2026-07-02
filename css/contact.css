@@ -1,0 +1,212 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #2f3640;
+    line-height: 1.6;
+}
+
+/* Header & Navigation Bar */
+.cv-global-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.cv-brand-identity h2 { 
+    font-size: 24px; 
+    font-weight: 700; 
+    color: #2f3640; 
+}
+
+.cv-brand-identity h2 span { 
+    color: #2ecc71; 
+}
+
+.cv-nav-menu { 
+    display: flex; 
+    list-style: none; 
+    gap: 10px; 
+}
+
+.cv-menu-link { 
+    text-decoration: none; 
+    color: #718093; 
+    padding: 10px 15px; 
+    font-weight: bold; 
+    font-size: 15px; 
+}
+
+.cv-menu-link:hover, .active-page { 
+    color: #2ecc71; 
+}
+
+/* Contact Hero Banner */
+.cv-contact-hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg,#00b09b,#96c93d);
+    border-bottom: 5px solid #4ade80;
+}
+
+.cv-contact-hero-txt h1 { 
+    font-size: 48px; 
+    font-weight: 700; 
+    color: #ffffff; 
+    margin-bottom: 10px; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.cv-contact-hero-txt p { 
+    font-size: 18px; 
+    color: #ffffff; 
+    max-width: 600px; 
+    margin: 0 auto;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); 
+}
+
+/* Main Contact */
+.cv-contact-hub {
+    padding: 40px 20px 80px 20px;
+}
+
+.cv-contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    background: #ffffff;
+}
+
+/* Left Column: Info Details */
+.cv-contact-info {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.cv-contact-info h2 {
+    font-size: 26px;
+    color: #2f3640;
+    margin-bottom: 15px;
+}
+
+.cv-contact-info p {
+    color: #718093;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.cv-info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cv-info-item strong {
+    font-size: 16px;
+    color: #2f3640;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cv-info-item p {
+    color: #57606f;
+    margin: 0;
+}
+
+/* Right Column: Contact Form Styling */
+.cv-contact-form-wrapper {
+    flex: 1.2;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05); /* ලස්සන Soft Shadow එකක් */
+    border: 1px solid #f1f2f6;
+}
+
+.cv-contact-form-wrapper h2 {
+    font-size: 24px;
+    color: #2f3640;
+    margin-bottom: 25px;
+}
+
+.cv-form-group {
+    margin-bottom: 20px;
+}
+
+.cv-form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #57606f;
+    margin-bottom: 8px;
+}
+
+.cv-form-group input, 
+.cv-form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    background-color: #fafafa;
+    color: #2f3640;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+.cv-form-group input:focus, 
+.cv-form-group textarea:focus {
+    border-color: #e74c3c;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.15);
+}
+
+/* Submit Button */
+.cv-submit-btn {
+    width: 100%;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cv-submit-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Footer Section */
+.cv-main-footer { 
+    background-color: #2f3640; 
+    color: #dcdde1; 
+    text-align: center; 
+    padding: 20px; 
+    font-size: 14px; 
+    border-top: 1px solid #e1e8ed; 
+}
+
+/* Responsive Grid (For Mobile Phones & Tablets) */
+@media (max-width: 800px) {
+    .cv-contact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .cv-contact-form-wrapper {
+        padding: 20px;
+    }
+}

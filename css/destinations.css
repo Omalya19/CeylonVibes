@@ -1,0 +1,246 @@
+/* Base settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #2f3640;
+    line-height: 1.6;
+}
+
+/* Header and Navigation Bar */
+.cv-global-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e8ed;
+    width: 100%;
+}
+
+.cv-brand-identity h2 {
+    color: #2f3640;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cv-brand-identity h2 span {
+    color: #2ecc71; 
+}
+
+.cv-nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.cv-menu-link {
+    text-decoration: none;
+    color: #718093;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.cv-menu-link:hover, .active-page {
+    color: #2ecc71;
+}
+
+/* Hero Section */
+.cv-destinations-hero {
+    background: #ffffff !important;
+    color: #2f3640;
+    text-align: center;
+    padding: 60px 15px 20px 15px;
+    width: 100%;
+}
+
+.cv-destinations-hero-txt h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.cv-section-title {
+    text-align: center;
+    font-size: 22px;
+    color: #2f3640;
+    margin: 60px 0 30px 0;
+    font-weight: 700;
+}
+
+.cv-destinations-hero-txt p {
+    font-size: 18px;
+    color: #718093;
+}
+
+/* Destinations Grid Area */
+.cv-destinations-hub {
+    padding: 30px 20px 80px 20px;
+    background-color: #ffffff;
+} 
+
+.cv-destinations-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Destination Card */
+.cv-destination-card {
+    background: #ffffff;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 360px;
+    overflow: hidden; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Image Settings */
+.cv-card-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.cv-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease;
+}
+
+.cv-destination-card:hover .cv-card-image img {
+    transform: scale(1.05); 
+}
+
+/* Card Content Settings */
+.cv-card-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cv-card-content h3 {
+    font-size: 20px;
+    color: #2f3640;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.cv-card-content p {
+    font-size: 14.5px;
+    color: #57606f;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+}
+
+/* Explore Button Style */
+.cv-explore-btn {
+    text-decoration: none;
+    background-color: #2ecc71;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14.5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-explore-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Hotspot Gallery Grid */
+.cv-gallery-section { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px 80px 20px; 
+}
+.cv-gallery-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+.cv-gallery-item { 
+    position: relative; 
+    height: 250px; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.cv-gallery-item img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.4s ease; 
+}
+.cv-gallery-item:hover img { 
+    transform: scale(1.06); 
+}
+.cv-image-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(47, 54, 64, 0.6); display: flex; justify-content: center; align-items: center;
+    opacity: 0; transition: opacity 0.3s ease;
+}
+.cv-image-overlay span { 
+    color: #ffffff; font-size: 18px; font-weight: bold; 
+    border: 2px solid #ffffff; padding: 6px 14px; border-radius: 4px; 
+}
+.cv-gallery-item:hover .cv-image-overlay { 
+    opacity: 1; 
+}
+
+/* Footer */
+.cv-main-footer {
+    background-color: #2f3640;
+    color: #dcdde1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    clear: both;
+}
+
+@media (min-width: 1024px) {
+    .cv-destinations-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        max-width: 1400px; 
+    }
+    
+    .cv-destination-card {
+        max-width: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cv-destinations-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .cv-destination-card {
+        max-width: none;
+    }
+}

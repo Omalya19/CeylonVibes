@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #2f3640;
+    line-height: 1.6;
+}
+
+/* Header and Navigation Bar */
+.cv-global-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e8ed;
+    width: 100%;
+}
+
+.cv-brand-identity h2 {
+    color: #2f3640;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cv-brand-identity h2 span {
+    color: #2ecc71; 
+}
+
+.cv-navigation-bar {
+    display: block;
+}
+
+.cv-nav-menu {
+    display: flex; 
+    list-style: none;
+    gap: 10px;
+}
+
+.cv-menu-link {
+    text-decoration: none; 
+    color: #718093;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.cv-menu-link:hover, .active-page {
+    color: #2ecc71;
+}
+
+/* Hero Banner */
+.cv-service-hero{
+    background: linear-gradient(135deg,#11998e,#38ef7d);
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 5px solid #2ecc71;
+}
+
+.cv-service-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.08);
+}
+
+.cv-service-hero-txt{
+    position: relative;
+    z-index: 2;
+}
+
+.cv-service-hero-txt h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.cv-service-hero-txt p{
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Service Main Hub */
+.cv-service-hub {
+    padding: 30px 20px 80px 20px;
+    background-color: #ffffff;
+} 
+
+/* Flex/Grid Wrapper */
+.cv-service-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Icon Circle */
+.cv-icon-box{
+    width:90px;
+    height:90px;
+    margin:0 auto 25px;
+    background:#eafaf1;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.3s ease;
+}
+
+.cv-icon-box i{
+    font-size:42px;
+    color:#1db954;
+}
+
+.cv-service-card:hover .cv-icon-box{
+    background:#d4f7e2;
+    transform:scale(1.08);
+}
+
+/* Individual Service Card */
+.cv-service-card {
+    background: #ffffff;
+    padding: 40px 25px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-bottom: 3px solid #2ecc71; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(46,204,113,.18);
+}
+
+/* Icon Box */
+.cv-icon-box {
+    font-size: 42px;
+    margin-bottom: 20px;
+} 
+
+.cv-service-card h3 {
+    font-size: 22px;
+    color: #2f3640;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.cv-service-card p {
+    font-size: 14.5px;
+    color: #57606f;
+    line-height: 1.6;
+}
+
+/* Footer */
+.cv-main-footer {
+    background-color: #2f3640;
+    color: #dcdde1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    clear: both;
+}
