@@ -54,7 +54,9 @@ body {
     background-repeat: no-repeat;     
     color: #ffffff;
     text-align: center;               
-    padding: 120px 20px;              
+    padding: 120px 20px; 
+    overflow-clip-margin: content-box;
+    overflow: clip;             
 }
 
 .cv-travel-inside h1 {
