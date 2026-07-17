@@ -184,65 +184,22 @@ body {
 
 /* Mobile View */
 @media (max-width: 768px) {
-    
     .cv-global-header {
         justify-content: center;
         padding: 15px 20px;
     }
-
     .cv-nav-menu {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        background-color: #ffffff;
-        border-top: 2px solid #2ecc71;
-        justify-content: space-around;
-        align-items: center;
-        z-index: 9999;
-        box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
-        padding: 0;
-        gap: 0; 
+        position: fixed; bottom: 0; left: 0; width: 100%; height: 60px;
+        background-color: #ffffff; border-top: 2px solid #2ecc71;
+        justify-content: space-around; align-items: center; z-index: 9999;
+        box-shadow: 0 -3px 10px rgba(0,0,0,0.1); padding: 0; gap: 0;
     }
-
-    .cv-nav-menu li {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .cv-nav-menu li { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
+    .cv-menu-link { 
+        display: flex; justify-content: center; align-items: center; 
+        width: 100%; height: 100%; padding: 0; text-align: center; 
     }
-
-    .cv-menu-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        font-size: 13px; 
-        text-align: center;
-    }
-
-    body {
-        padding-bottom: 65px;
-    }
-
-    .cv-service-hero {
-        padding: 60px 15px;
-    }
-    
-    .cv-service-hero-txt h1 {
-        font-size: 32px;
-    }
-    
-    .cv-service-hero-txt p {
-        font-size: 16px;
-    }
-
-    .cv-service-card {
-        max-width: 100%;
-        min-width: 100%;
-    }
+    body { padding-bottom: 65px; }
+    .cv-service-hero { padding: 60px 15px; }
+    .cv-service-card { max-width: 100%; min-width: 100%; }
 }
