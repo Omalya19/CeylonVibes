@@ -200,3 +200,14 @@ body {
     border-top: 1px solid #e1e8ed; 
 }
 
+/* Responsive Grid (For Mobile Phones & Tablets) */
+@media (max-width: 800px) {
+    .cv-contact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .cv-contact-form-wrapper {
+        padding: 20px;
+    }
+}
+

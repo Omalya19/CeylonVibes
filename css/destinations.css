@@ -223,7 +223,6 @@ body {
     clear: both;
 }
 
-/* Mobile View */
 @media (min-width: 1024px) {
     .cv-destinations-grid {
         display: grid;
@@ -231,6 +230,16 @@ body {
         max-width: 1400px; 
     }
     
+    .cv-destination-card {
+        max-width: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cv-destinations-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
     .cv-destination-card {
         max-width: none;
     }
