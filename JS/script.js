@@ -17,28 +17,28 @@ function validateForm() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
-    const menuClose = document.getElementById("menu-close");
-    const navLinks = document.getElementById("nav-links");
-    const menuOverlay = document.getElementById("menu-overlay");
+    const hamburgerBtn = document.getElementById("menu-toggle") || document.querySelector(".cv-hamburger-btn");
+    const sidebarMenu = document.querySelector(".cv-sidebar-menu");
+    const closeBtn = document.querySelector(".close-btn");
+    const menuOverlay = document.querySelector(".cv-menu-overlay");
 
-    if (menuToggle) {
-        menuToggle.addEventListener("click", function () {
-            if (navLinks) navLinks.classList.add("active");
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener("click", function () {
+            if (sidebarMenu) sidebarMenu.classList.add("active");
             if (menuOverlay) menuOverlay.classList.add("active");
         });
     }
 
-    if (menuClose) {
-        menuClose.addEventListener("click", function () {
-            if (navLinks) navLinks.classList.remove("active");
+    if (closeBtn) {
+        closeBtn.addEventListener("click", function () {
+            if (sidebarMenu) sidebarMenu.classList.remove("active");
             if (menuOverlay) menuOverlay.classList.remove("active");
         });
     }
 
     if (menuOverlay) {
         menuOverlay.addEventListener("click", function () {
-            if (navLinks) navLinks.classList.remove("active");
+            if (sidebarMenu) sidebarMenu.classList.remove("active");
             if (menuOverlay) menuOverlay.classList.remove("active");
         });
     }
