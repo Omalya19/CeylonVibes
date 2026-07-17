@@ -255,7 +255,6 @@ body {
         display: none !important;
     }
 
-    /* Header එක මැදට කරන්න */
     .cv-global-header {
         position: relative;
         justify-content: center;
@@ -263,8 +262,8 @@ body {
     }
 
     .cv-hamburger-btn {
-        display: block !important;
-        font-size: 28px;
+        display: block;
+        font-size: 26px;
         background: none;
         border: none;
         color: #2f3640;
@@ -273,7 +272,6 @@ body {
         left: 20px;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 9999;
     }
 
     .cv-sidebar-menu {
