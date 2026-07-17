@@ -8,6 +8,8 @@
 <body>
 
     <header class="cv-global-header">
+        <button id="menu-toggle" class="cv-hamburger-btn">☰</button>
+
         <div class="cv-brand-identity">
             <h2>Ceylon<span>Vibes</span></h2>
         </div>
@@ -21,6 +23,22 @@
             </ul>
         </nav>
     </header>
+
+    <div id="nav-links" class="cv-sidebar-menu">
+        <div class="sidebar-header">
+            <h3>MENU</h3>
+            <button id="menu-close" class="close-btn">×</button>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active-sidebar">About Us</a></li>
+            <li><a href="services.html">Tour Services</a></li>
+            <li><a href="destinations.html">Hotspots</a></li>
+            <li><a href="contact.html">Reach Us</a></li>
+        </ul>
+    </div>
+
+    <div id="menu-overlay" class="cv-menu-overlay"></div>
 
    <section class="cv-storyline-header" >
         <div class="cv-storyline-text">
@@ -47,6 +65,8 @@
     <footer class="cv-main-footer">
         <p>&copy; 2026 CeylonVibes Travel Guide. All Rights Reserved</p>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

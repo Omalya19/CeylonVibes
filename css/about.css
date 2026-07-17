@@ -140,3 +140,119 @@ body {
     clear: both;
 }
 
+/* Mobile View */
+.cv-hamburger-btn, .cv-sidebar-menu, .cv-menu-overlay {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .cv-nav-menu {
+        display: none !important;
+    }
+
+    .cv-global-header {
+        position: relative;
+        justify-content: center;
+        padding: 15px 20px;
+    }
+
+    .cv-hamburger-btn {
+        display: block;
+        font-size: 26px;
+        background: none;
+        border: none;
+        color: #2f3640;
+        cursor: pointer;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .cv-sidebar-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -280px; 
+        width: 280px;
+        height: 100%;
+        background-color: #ffffff; 
+        z-index: 99999;
+        transition: left 0.3s ease-in-out;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        overflow-y: auto;
+    }
+
+    .cv-sidebar-menu.active {
+        left: 0;
+    }
+
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid #dcdde1;
+        background-color: #ffffff;
+    }
+
+    .sidebar-header h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #2f3640;
+        letter-spacing: 1px;
+    }
+
+    .close-btn {
+        font-size: 28px;
+        background: none;
+        border: none;
+        color: #718093;
+        cursor: pointer;
+        line-height: 1;
+    }
+
+    .cv-sidebar-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cv-sidebar-menu ul li {
+        border-bottom: 1px solid #f5f6fa;
+    }
+
+    .cv-sidebar-menu ul li a {
+        display: block;
+        padding: 16px 20px;
+        color: #718093; 
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        transition: all 0.2s ease;
+    }
+
+    .cv-sidebar-menu ul li a:hover, .active-sidebar {
+        background-color: #f5f6fa;
+        color: #2ecc71 !important; 
+        border-left: 4px solid #2ecc71; 
+        padding-left: 16px;
+    }
+
+    .cv-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 99998;
+        display: none;
+    }
+
+    .cv-menu-overlay.active {
+        display: block;
+    }
+}
